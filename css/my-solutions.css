@@ -89,7 +89,7 @@
 
 @keyframes rotazione {
     0% {
-        transform: rotate(1turn);
+        transform: rotate(10turn);
     }
 }
 
@@ -106,5 +106,38 @@
     }
     100% {
         transform: rotate(0);
+    }
+}
+
+/* animazione bottone test */
+.ex-12-button:hover .ex-12-top-white {
+    animation: top-spazio-move 3s linear infinite;
+}
+
+@keyframes top-spazio-move {
+    0% {
+        left: 10%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-spazio-move 3s linear infinite;
+}
+
+@keyframes bottom-spazio-move {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 20%;
     }
 }
